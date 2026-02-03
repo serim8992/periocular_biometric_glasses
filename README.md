@@ -41,3 +41,63 @@ Main components:
 git clone https://github.com/serim8992/RockSiN.git
 cd RockSiN
 pip install torch torchvision numpy opencv-python tqdm scikit-learn matplotlib
+```
+
+---
+
+## 🏃 Usage (Example)
+
+```bash
+# ArcFace training
+python main.py --mode arcface
+
+# Contrastive learning
+python main.py --mode contrastive
+
+# Contrastive + Linear Probing
+python main.py --mode contrastive_linear_probing
+```
+
+### Key Arguments
+
+| Argument | Description | Default |
+|---------|-------------|---------|
+| --model_name | mobilenetv3, resnet18, shvit_s2 | mobilenetv3 |
+| --data_dir | Dataset path | ./periocular_data |
+| --epochs | Training epochs | 10 |
+| --batch_size | Batch size | 32 |
+| --lr | Learning rate | 0.0001 |
+| --fold | Cross-validation fold | 1 |
+
+---
+
+## 📂 Project Structure
+
+```
+periocular_biometric_glasses/
+├── data/
+├── models/
+├── training/
+├── tools/
+├── notebooks/
+└── main.py
+```
+
+---
+
+## 📄 Paper
+
+RockSiN: Robust Cross-domain Siamese Network for Periocular Biometrics
+(Currently under review)
+
+---
+
+## 👤 Maintainer
+
+Selim Jeong  
+Sangmyung University PRLab
+
+---
+
+⭐ If you find this project useful, a star is always appreciated.
+```
