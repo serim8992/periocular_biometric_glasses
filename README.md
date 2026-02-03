@@ -1,6 +1,6 @@
 # RockSiN: Robust Periocular Recognition under Glasses
 
-RockSiN is a deep learning–based periocular recognition framework designed for robust verification,  
+RockSiN is a deep learning-based periocular recognition framework designed for robust verification,  
 particularly effective under appearance variations such as glasses and Near-Infrared (NIR) imaging.
 
 It adopts a Siamese architecture with explicit difference feature learning to enhance discriminative power  
@@ -12,19 +12,22 @@ for periocular pair matching.
 ---
 
 ## 🚀 Key Features
-- **Siamese Architecture**: Dual-branch feature extraction for pairwise matching  
-- **Difference Feature Learning**: Explicit modeling of feature differences  
-- **Flexible Backbones**: MobileNetV3 / ResNet18 / SHViT  
-- **Domain Robustness**: Designed for glasses-induced domain shift & NIR variation  
-- **Easy Configuration**: Command-line configurable pipeline  
+
+- **Siamese Architecture**: Dual-branch feature extraction for pairwise periocular matching.
+- **Difference Feature Learning**: Explicit modeling of feature differences for improved discrimination.
+- **Flexible Backbones**: MobileNetV3 / ResNet18 / SHViT.
+- **Domain Robustness**: Designed for glasses-induced domain shift and NIR appearance variation.
+- **Easy Configuration**: Command-line configurable pipeline.
 
 ---
 
 ## 🧠 Method Overview
+
 RockSiN extracts embeddings from paired periocular images using shared-weight backbones.  
-Feature vectors are combined via difference learning and fed into a metric head for similarity estimation.
+Feature vectors are combined via difference learning and passed to a metric head for similarity estimation.
 
 Main components:
+
 - Backbone Feature Extractor (CNN / ViT)
 - Siamese Pair Encoding
 - Difference Feature Module
@@ -33,6 +36,7 @@ Main components:
 ---
 
 ## 🛠 Installation
+
 ```bash
 git clone https://github.com/serim8992/RockSiN.git
 cd RockSiN
