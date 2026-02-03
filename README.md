@@ -94,7 +94,7 @@ RockSiN: Robust Cross-domain Siamese Network for Periocular Biometrics
 
 ## 👤 Maintainer
 
-Selim Jeong  
+Selim Jeong Hakjin Lee Yeongje Park
 Sangmyung University PRLab
 
 ---
